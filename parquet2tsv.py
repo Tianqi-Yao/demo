@@ -225,6 +225,7 @@ def main(args):
     df_daily = pandas.DataFrame(db.all()).loc[:, [args.textcol, args.labelcol, args.tokencol]]
 
     log_str("wrote to tsv")
+    log_str("wrote to tsv")
     process_table(args, df_daily, dfval, dftest)
     
 
